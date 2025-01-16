@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: auto;
+    background-color: rgb(196, 196, 196);
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    background-image: url("images/TFAicon.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 42px;
+    height: 42px; 
+
+}
+
+.pages {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    padding: 0px 10px;
+    padding-top: 23px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(77, 77, 77);
+}
+
+.single_link:hover {
+    color: black;
+    cursor: pointer;
+    text-shadow: 2px 5px 8px #000000;
+    font-size: 16px;
+}
+
+.single_link {
+    word-spacing: normal;
+    margin-left: 30px;
+    transition: 0.3s;
+    user-select: none;
+    font-size: 15px;
+}
+
+.single_link:active {
+    color: black;
+    cursor: pointer;
+    text-shadow: 2px 5px 8px #333333;
+    font-size: 15.4px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #535353;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    background-color: #000000;
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    background-color: #000000;
+}
