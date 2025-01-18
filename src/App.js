@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Projects from './pages/Projects';
 
 import './App.css';
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      APP
+      <Projects />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+.project {
+    background-image: url("./pictures/UWC/02.4-UWC Dilijan_21.jpg");
+    max-width: 288px;
+    height: 200px;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.project:hover{
+    filter: grayscale(100%);
+}
+
+.description {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.4s;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.description:hover {
+    opacity: 1;
+}

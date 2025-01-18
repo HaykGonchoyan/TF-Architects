@@ -10,13 +10,11 @@
 }
 
 .logo {
-    background-image: url("./images/TFAicon.png");
+    background-image: url("./images/LogoPNG.png");
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 42px;
-    height: 42px; 
-
+    width: 4000px;
 }
 
 .pages {
@@ -38,7 +36,8 @@
     color: black;
     cursor: pointer;
     text-shadow: 2px 5px 8px #000000;
-    font-size: 16px;
+    font-size: 15.7px;
+    margin-top: -5px;
 }
 
 .single_link {
@@ -54,6 +53,7 @@
     cursor: pointer;
     text-shadow: 2px 5px 8px #333333;
     font-size: 15.4px;
+    margin-top: -3px;
 }
 
 .bar1, .bar2, .bar3 {
