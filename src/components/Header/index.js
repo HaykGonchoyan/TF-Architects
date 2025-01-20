@@ -11,7 +11,7 @@ const Header = () => {
         <div className="pages">
             <div className="links" id="links">
                 <href className="single_link">HOME</href>
-                <href className="single_link">PROJECTS</href>
+                <href className="single_link">PORTFOLIO</href>
                 <href className="single_link">SERVICES</href>
                 <href className="single_link">ABOUT US</href>
                 <href className="single_link">OUR PARTNERS</href>

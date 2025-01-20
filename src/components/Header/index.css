@@ -6,7 +6,9 @@
     padding: 21px;
     display: flex;
     justify-content: space-between;
-
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
 }
 
 .logo {
@@ -14,7 +16,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 4000px;
+    min-width: 210px;
 }
 
 .pages {
@@ -23,7 +25,7 @@
 
 .links {
     display: flex;
-    padding: 0px 10px;
+    padding: 0 10px;
     padding-top: 23px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;

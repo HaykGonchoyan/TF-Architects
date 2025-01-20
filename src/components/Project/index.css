@@ -1,28 +1,39 @@
-.project {
-    background-image: url("./pictures/UWC/02.4-UWC Dilijan_21.jpg");
-    max-width: 288px;
-    height: 200px;
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    border-radius: 2px;
+.image-card {
+    min-width: 388px;
+    height: 270px;
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: 0.4s;
+    margin: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.project:hover{
-    filter: grayscale(100%);
+.image-card:hover {
+    height: 280px;
+    min-width: 398px;
+    margin: 0;
+    box-shadow: 2px 2px 5px rgb(90, 90, 90);
 }
 
-.description {
-    width: 100%;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    opacity: 0;
-    transition: 0.4s;
-    text-align: center;
-    font-size: 40px;
+
+.text {
+    color: white;
+    margin: 0 10px;
+    position: relative;
+    top: 84.4%;
+    font-size: 30px;
     
 }
 
-.description:hover {
+.text-container{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s;
+    background-image: linear-gradient(rgb(255, 0, 0, 0), rgb(255, 0, 0, 0), rgb(255, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.text-container:hover {
     opacity: 1;
 }
