@@ -10,13 +10,13 @@ const Header = () => {
         </div>
         <div className="pages">
             <div className="links" id="links">
-                <href className="single_link">HOME</href>
-                <href className="single_link">PORTFOLIO</href>
-                <href className="single_link">SERVICES</href>
-                <href className="single_link">ABOUT US</href>
-                <href className="single_link">OUR PARTNERS</href>
-                <href className="single_link">CONTACTS</href>
-                <href className="single_link">LANGUAGE</href>
+                <div className="single_link">HOME</div>
+                <div className="single_link">PORTFOLIO</div>
+                <div className="single_link">SERVICES</div>
+                <div className="single_link">ABOUT US</div>
+                <div className="single_link">OUR PARTNERS</div>
+                <div className="single_link">CONTACTS</div>
+                <div className="single_link">LANGUAGE</div>
             </div>
         </div>
     </div>
