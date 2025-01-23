@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom"
+
 
 
 import "./index.css"
 
 const Header = () => {
+
+
+    
 
     return(
         <div className="header">
@@ -10,8 +15,8 @@ const Header = () => {
         </div>
         <div className="pages">
             <div className="links" id="links">
-                <div className="single_link">HOME</div>
-                <div className="single_link">PORTFOLIO</div>
+                <Link to="/"><div className="single_link">HOME</div></Link>
+                <Link to="/portfolio"><div className="single_link">PORTFOLIO</div></Link>
                 <div className="single_link">SERVICES</div>
                 <div className="single_link">ABOUT US</div>
                 <div className="single_link">OUR PARTNERS</div>

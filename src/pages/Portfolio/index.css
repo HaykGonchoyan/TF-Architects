@@ -1,4 +1,7 @@
+
+
 .container {
+    flex-wrap: wrap;
     padding: 40px 0;
     display: flex;
     cursor: context-menu;
@@ -9,3 +12,4 @@ h1{
     display: flex;
     justify-content: center;
 }
+

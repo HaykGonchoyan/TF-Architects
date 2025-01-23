@@ -8,20 +8,19 @@ import './App.css';
 
 function App() {
   return (
-    <Layout>
     <RouterProvider
       router={
         createBrowserRouter(
           createRoutesFromElements(
             <>
-            <Route path="/" element={<Home />} />
-            <Route path={ROUTE_CONSTANTS.PORTFOLIO} element={<Portfolio />} />
+            <Route path="/" element={<Layout><Home /></Layout>} />
+            <Route path={ROUTE_CONSTANTS.PORTFOLIO} element={<Layout><Portfolio /></Layout>} />
             </>
           )
         )
       }
     
-    /></Layout>
+    />
   );
 }
 

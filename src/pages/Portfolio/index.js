@@ -14,11 +14,11 @@ const Portfolio = () => {
             </h1>
             <hr />
             <div className="container">
-                <div></div>
+                <div />
                 <Project image={UWCmain} description="UWC-Dilijan"/>
                 <Project image={TICmain} description="TIC-Dilijan"/>
                 <Project image={IDeAmain} description="IDeA Office-Yerevan"/>
-                <div></div>
+                <div />
             </div>
         </div>
     )
