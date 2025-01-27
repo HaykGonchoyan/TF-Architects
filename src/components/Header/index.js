@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import { ROUTE_CONSTANTS } from "../core/utils/constants"
 
 
 import "./index.css"
@@ -11,12 +11,11 @@ const Header = () => {
 
     return(
         <div className="header">
-        <div className="logo">
-        </div>
+        <Link to="/"><div className="logo" /></Link>
         <div className="pages">
             <div className="links" id="links">
                 <Link to="/"><div className="single_link">HOME</div></Link>
-                <Link to="/portfolio"><div className="single_link">PORTFOLIO</div></Link>
+                <Link to={ROUTE_CONSTANTS.PORTFOLIO}><div className="single_link">PORTFOLIO</div></Link>
                 <div className="single_link">SERVICES</div>
                 <div className="single_link">ABOUT US</div>
                 <div className="single_link">OUR PARTNERS</div>

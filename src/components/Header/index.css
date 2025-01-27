@@ -1,6 +1,7 @@
 
 
 .header {
+    z-index: 999;
     height: auto;
     background-color: rgb(196, 196, 196);
     padding: 21px;
@@ -17,6 +18,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     min-width: 210px;
+    cursor: pointer;
 }
 
 .pages {

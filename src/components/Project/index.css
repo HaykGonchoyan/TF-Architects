@@ -4,15 +4,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     transition: 0.4s;
-    margin: 0 5px;
+    margin: 0 30px;
     margin-bottom: 10px;
     cursor: pointer;
+    background-color: black;
 }
 
 .image-card:hover {
     height: 280px;
     min-width: 398px;
-    margin: 0;
+    margin: 0 25px;
     box-shadow: 2px 2px 5px rgb(90, 90, 90);
 }
 
