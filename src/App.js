@@ -13,7 +13,7 @@ function App() {
         createBrowserRouter(
           createRoutesFromElements(
             <>
-            <Route path="/" element={<Layout><Home /></Layout>} />
+            <Route path="/" element={<Home />} />
             <Route path={ROUTE_CONSTANTS.PORTFOLIO} element={<Layout><Portfolio /></Layout>} />
             </>
           )

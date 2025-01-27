@@ -21,12 +21,12 @@ const Portfolio = () => {
             </h2>
             <hr />
             <div className="container">
-                <Project image={UWCmain} description="UWC-Dilijan"/>
-                <Project image={TICmain} description="TIC-Dilijan"/>
-                <Project image={IDeAmain} description="IDeA Office-Yerevan"/>
-                <Project image={FASTmain} description="FAST-Yerevan"/>
-                <Project image={DiliTownMain} description="DiliTown-Dilijan"/>
-                <Project image={YECmain} description="Yeghvard EC-Yeghvard"/>
+                <Project image={UWCmain} description="UWC-Dilijan" link="./UWC"/>
+                <Project image={TICmain} description="TIC-Dilijan" link="./TIC"/>
+                <Project image={IDeAmain} description="IDeA Office-Yerevan" link="./IDeA_office"/>
+                <Project image={FASTmain} description="FAST-Yerevan" link="./FAST"/>
+                <Project image={DiliTownMain} description="DiliTown-Dilijan" link="./Dilitown"/>
+                <Project image={YECmain} description="Yeghvard EC-Yeghvard" link="./Yeghvard_EC"/>
             </div>
             <hr />
             <h2 className="portfolio-h2">
@@ -34,7 +34,7 @@ const Portfolio = () => {
             </h2>
             <hr />
             <div className="container">
-                <Project image={DiliTropicMain} description="Dilitropic-Dilijan"/>
+                <Project image={DiliTropicMain} description="Dilitropic-Dilijan" link="/Dilitropic"/>
             </div>
         </div>
     )
