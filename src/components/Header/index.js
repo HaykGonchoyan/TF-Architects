@@ -32,8 +32,8 @@ const Header = () => {
         <div className="logo" />
         <div className="pages">
             <div className="links" id="links">
-                <Link to="/"><div className="single_link">HOME</div></Link>
-                <Link to={ROUTE_CONSTANTS.PORTFOLIO}><div className="single_link">PORTFOLIO</div></Link>
+                <Link className="single_link" to="/"><div>HOME</div></Link>
+                <Link className="single_link" to={ROUTE_CONSTANTS.PORTFOLIO}><div>PORTFOLIO</div></Link>
                 <div className="single_link">SERVICES</div>
                 <div className="single_link">ABOUT US</div>
                 <div className="single_link">OUR PARTNERS</div>

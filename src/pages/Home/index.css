@@ -1,0 +1,39 @@
+.home-container {
+    background-color: rgb(133, 133, 133);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.left-container{
+    width: 30%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.250);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.home-h1 {
+    font-size: 40px;
+    margin: 0;
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.home-single-link{
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.home-single-link:hover {
+    font-size: 25px;
+
+}
