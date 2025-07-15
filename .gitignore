@@ -1,9 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+/Extra
 /node_modules
 /.pnp
 .pnp.js
+
+touch .zip
+touck .rar
 
 # testing
 /coverage

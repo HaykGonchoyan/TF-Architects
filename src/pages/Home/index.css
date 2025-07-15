@@ -6,17 +6,28 @@
     width: 100%;
 }
 
+.home-slideshow{
+    position: absolute;
+    bottom: 0;
+    top: -17vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 1s;
+}
+
 .left-container{
-    width: 30%;
+    width: auto;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.250);
+    background-color: rgba(0, 0, 0, 0.50);
     position: absolute;
     top: 0;
     bottom: 0;
+    user-select: none;
 }
 
 .home-h1 {
-    font-size: 40px;
+    font-size: 200%;
     margin: 0;
     color:white;
     margin-top: 20px;
@@ -26,14 +37,15 @@
 
 .home-single-link{
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 100%;
     color: white;
     text-decoration: none;
     cursor: pointer;
     transition: 0.4s;
+    width: auto;
 }
 
 .home-single-link:hover {
-    font-size: 25px;
+    font-size: 110%;
 
 }

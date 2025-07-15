@@ -1,0 +1,30 @@
+
+
+
+.scroll-button {
+    opacity: 90%;
+    position: fixed;
+    right: 50px;
+    bottom: 75px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./logo/up-arrow-button.png");
+    transition: 0.4s;
+    animation: scale-up 0.2s cubic-bezier(0.74, 0, 0.4, 1) both;
+    cursor: pointer;
+}
+
+.scroll-button:hover{
+    transform: scale(1.1);
+}
+
+html{
+    scroll-behavior: smooth;
+}

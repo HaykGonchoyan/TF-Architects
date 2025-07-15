@@ -1,12 +1,26 @@
+.page-container {
+    padding: 20px 13%;
+    font-size: 22px;
+}
 
+
+.page-images{
+    margin: auto;
+    margin-top: 20px;
+    aspect-ratio: 1920/1357;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 840px;
+    transition: 1s;
+}
 
 .container {
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 40px 10px;
     display: flex;
     align-items: center;
     cursor: context-menu;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .portfolio-h2, .portfolio-h1{

@@ -1,9 +1,12 @@
 import Header from "../Header";
+import Footer from "../Footer";
 
-const Layout = ({children}) => {
+const Layout = ({children, language}) => {
+    
     return(<div>
-        <Header />
-        {children}
+        <Header language = {language}/>
+        <div style={{position: "relative", minHeight: "calc(100vh - 176px)"}}>{children}</div>
+        <Footer />
     </div>)
 }
 

@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.hide{
+  opacity: 0;
+  transition: 0.2s;
+  transform: scale(0);
+  cursor: default;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,73 +1,74 @@
 import { Link } from "react-router-dom"
-import { ROUTE_CONSTANTS } from "../core/utils/constants"
-import { DownOutlined } from "@ant-design/icons"
-import { ConfigProvider, Dropdown } from "antd"
+import { LANG_CONSTANTS, ROUTE_CONSTANTS } from "../core/utils/constants"
 import { useState } from "react"
 
 import "./index.css"
 
 
 const Header = () => {
-    const [lang, setLang] = useState("eng")
-
-    const items = [
-        {
-          key: '1',
-          label: 'ENG',
-        },
-        {
-          key: '2',
-          label: 'РУС',
-        },
-        {
-          key: '3',
-          label: 'ՀԱՅ',
-        },
-      ];
+    const[isMenuOpen, setIsMenuOpen] = useState(true)
+    const [menuClass, setMenuClass] = useState('')
+    const [menuLinkClass, setMenuLinkClass] = useState('closed-menu')
+    const [lang, setLang] = useState(Number(localStorage.lang))    
+    window.scrollTo(0, 0);
     
-      console.log(lang);
+    
+   
 
+    const handleMenuClick = () => {
+        setIsMenuOpen(!isMenuOpen)
+        if (isMenuOpen) {
+            setMenuClass('menu')
+            setMenuLinkClass('single_link-menu')
+        }else{
+            setMenuClass('')
+            setMenuLinkClass('closed-menu')
+        }
+
+      }
+
+      const handleLangClick = () => {
+        if (!lang) {
+            setLang(1)
+            localStorage.setItem("lang", `1`)
+        } else {
+            setLang(0)
+            localStorage.setItem("lang", `0`)
+        }
+        window.location.reload()
+      }
+    
     return(
         <div className="header">
-        <div className="logo" />
+        <div className="header-main">
+        <Link className="logo" to="/"/>
         <div className="pages">
-            <div className="links" id="links">
-                <Link className="single_link" to="/"><div>HOME</div></Link>
-                <Link className="single_link" to={ROUTE_CONSTANTS.PORTFOLIO}><div>PORTFOLIO</div></Link>
-                <div className="single_link">SERVICES</div>
-                <div className="single_link">ABOUT US</div>
-                <div className="single_link">OUR PARTNERS</div>
-                <div className="single_link">CONTACTS</div>
+             <div className="links" id="links">
+                <Link className="single_link on-menu-link" to="/"><div>{LANG_CONSTANTS.HOME[lang]}</div></Link>
+                <Link className="single_link on-menu-link" to={ROUTE_CONSTANTS.PORTFOLIO}><div>{LANG_CONSTANTS.PORTFOLIO[lang]}</div></Link>
+                <Link className="single_link on-menu-link" to={ROUTE_CONSTANTS.SERVICES}><div>{LANG_CONSTANTS.SERVICES[lang]}</div></Link>
+                <Link className="single_link on-menu-link" to={ROUTE_CONSTANTS.ABOUT_US}><div>{LANG_CONSTANTS.ABOUT_US[lang]}</div></Link>
+                <Link className="single_link on-menu-link" to={ROUTE_CONSTANTS.CONTACTS}><div>{LANG_CONSTANTS.CONTACTS[lang]}</div></Link>
 
-                <ConfigProvider
-                    theme={{
-                        token: {
-                            colorBgContainer: "rgb(245, 245, 245)",
-                            colorText: "rgb(77, 77, 77)",
-                            colorPrimary: "rgb(110, 110, 110)",
-                            colorPrimaryText: "rgb(0, 0, 0)",
-                            colorPrimaryBg: "rgb(224, 224, 224)",
-                        }
-                    }}
-                >
-
-                <div className="single_link">
-                <Dropdown
-                    menu={{
-                        items,
-                        selectable: true,
-                        defaultSelectedKeys: ['1'],
-                      }}
-                      trigger={['click']}
-                      
-                >
-                            <div>{lang === "eng" ? "ENG" : lang === "rus" ? "РУС" : "ՀԱՅ"}<DownOutlined/></div>
-                </Dropdown>
                 
-                </div>
-                </ConfigProvider>
-            </div>
+                <div className="single_link" onClick={handleLangClick}>{LANG_CONSTANTS.LANG[lang]}</div>
+                
+                
+                
+                <div className="single_link header-menu" onClick={handleMenuClick}>MENU</div>
+            </div>  
+            
         </div>
+    </div>
+
+
+    <div className={menuClass}>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to="/"><div>HOME</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.PORTFOLIO}><div>PORTFOLIO</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.SERVICES}><div>SERVICES</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.ABOUT_US}><div>ABOUT US</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.CONTACTS}><div>CONTACTS</div></Link>
+    </div>
     </div>
     )
 }

@@ -1,0 +1,53 @@
+.f-hr{
+    margin: 10px 20px;
+    border: 0.6px solid rgb(145, 145, 145);
+    height: 30px;
+}
+
+.footer-container{
+    margin-top: 0;
+    margin-bottom: -10px;      
+    padding: 21px 0px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999;
+    background-color: rgb(196, 196, 196);
+}
+
+.footer-logo{
+    background-image: url("../Header/images/TFAicon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 50px;
+    min-height: 50px;
+    margin: auto;
+
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vw;  
+    margin: auto;
+}
+.fa {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.fa-facebook {
+    background: rgb(58, 52, 52);
+    color: rgb(196, 196, 196);
+}
+.fa-instagram {
+    background: rgb(58, 52, 52);
+    color: rgb(196, 196, 196);
+}
