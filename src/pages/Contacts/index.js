@@ -6,6 +6,7 @@ const Contacts = () => {
 
         <iframe
                 className="map"
+                title="map"
                 src="https://maps.google.com/maps?&amp;hl=en&amp;q=Hanrapetutyan 79&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 width="388"
                 height="270"

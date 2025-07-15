@@ -5,6 +5,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.6.0",
     "antd": "^5.23.1",
+    "country-flag-icons": "^1.5.19",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

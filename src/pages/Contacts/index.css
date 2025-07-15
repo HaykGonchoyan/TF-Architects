@@ -7,6 +7,10 @@
     align-items: center;
 
 }
+iframe {
+  pointer-events: none;
+}
+
 
 .map{
     width: 388px;

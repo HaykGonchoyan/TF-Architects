@@ -13,12 +13,12 @@ import FAST from './pages/Portfolio/FAST';
 import DiliTown from './pages/Portfolio/DiliTown';
 import YEC from './pages/Portfolio/YEC';
 import AboutUs from './pages/AboutUs';
-
-import './App.css';
 import HotelComplex from './pages/Portfolio/HotelComplex';
 import Ruby from './pages/Portfolio/Ruby';
 import Steko from './pages/Portfolio/Steko';
 import Dilitropic from './pages/Portfolio/Dilitropic';
+
+import './App.css';
 
 function App() {
   const language = {lang: 0}

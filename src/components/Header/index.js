@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import { LANG_CONSTANTS, ROUTE_CONSTANTS } from "../core/utils/constants"
 import { useState } from "react"
+import { GlobalOutlined } from "@ant-design/icons"
+
 
 import "./index.css"
 
@@ -51,11 +53,11 @@ const Header = () => {
                 <Link className="single_link on-menu-link" to={ROUTE_CONSTANTS.CONTACTS}><div>{LANG_CONSTANTS.CONTACTS[lang]}</div></Link>
 
                 
-                <div className="single_link" onClick={handleLangClick}>{LANG_CONSTANTS.LANG[lang]}</div>
+                <div className="single_link" onClick={handleLangClick}>{LANG_CONSTANTS.LANG[lang]}<GlobalOutlined /></div>
                 
                 
                 
-                <div className="single_link header-menu" onClick={handleMenuClick}>MENU</div>
+                <div className="single_link header-menu" onClick={handleMenuClick}>{LANG_CONSTANTS.MENU[lang]}</div>
             </div>  
             
         </div>
@@ -64,10 +66,10 @@ const Header = () => {
 
     <div className={menuClass}>
         <Link className={menuLinkClass} onClick={handleMenuClick} to="/"><div>HOME</div></Link>
-        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.PORTFOLIO}><div>PORTFOLIO</div></Link>
-        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.SERVICES}><div>SERVICES</div></Link>
-        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.ABOUT_US}><div>ABOUT US</div></Link>
-        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.CONTACTS}><div>CONTACTS</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.PORTFOLIO}><div>{LANG_CONSTANTS.PORTFOLIO[lang]}</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.SERVICES}><div>{LANG_CONSTANTS.SERVICES[lang]}</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.ABOUT_US}><div>{LANG_CONSTANTS.ABOUT_US[lang]}</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.CONTACTS}><div>{LANG_CONSTANTS.CONTACTS[lang]}</div></Link>
     </div>
     </div>
     )

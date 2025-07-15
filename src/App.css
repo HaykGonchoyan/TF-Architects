@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+iframe {
+  pointer-events: none;
+}
 
 .hide{
   opacity: 0;
