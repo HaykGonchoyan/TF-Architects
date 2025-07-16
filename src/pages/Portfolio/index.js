@@ -19,10 +19,10 @@ const Portfolio = () => {
     return(
         <div className="project-container">
             <h1 className="portfolio-h1">
-                PORTFOLIO
+                {!Number(localStorage.lang) ? "Portfolio" : "Պորտֆոլիո"}
             </h1>
             <h2 className="portfolio-h2">
-                COMPLETED PROJECTS
+                {!Number(localStorage.lang) ? "Completed Projects" : "Ավարտված Նախագծեր"}
             </h2>
             <hr />
             <div className="container">
@@ -36,7 +36,7 @@ const Portfolio = () => {
             </div>
             <hr />
             <h2 className="portfolio-h2">
-                INCOMPLETED PROJECTS
+                {!Number(localStorage.lang) ? "Pending Projects" : "Ընթացիկ Նախագծեր"}
             </h2>
             <hr />
             <div className="container">
