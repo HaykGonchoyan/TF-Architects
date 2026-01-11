@@ -28,3 +28,10 @@
     justify-content: center;
 }
 
+
+@media screen and (max-width: 299.99px)
+{
+    .container{
+        padding: 40px 33vw;
+    }
+}

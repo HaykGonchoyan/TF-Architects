@@ -112,11 +112,23 @@
 
 
   @media screen and (max-width: 440px) {
-    .arrow {
-      display: none;
+    .logo {
+        min-width: 30vw;    
+    }
+    .single_link{
+            font-size: 4vw;
+            margin-left: 4vw;
+    }
+    .links {
+        padding-top: 4vw;
     }
   }
 
+ @media screen and (max-width: 210px) {
+    .anticon{
+        display: none;
+    }
+  }
 
 
 

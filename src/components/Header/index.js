@@ -53,7 +53,7 @@ const Header = () => {
                 <Link className="single_link on-menu-link" to={ROUTE_CONSTANTS.CONTACTS}><div>{LANG_CONSTANTS.CONTACTS[lang]}</div></Link>
 
                 
-                <div className="single_link" onClick={handleLangClick}>{LANG_CONSTANTS.LANG[lang]}<GlobalOutlined /></div>
+                <div className="single_link" onClick={handleLangClick}>{LANG_CONSTANTS.LANG[lang]}<GlobalOutlined className="globe"/></div>
                 
                 
                 
