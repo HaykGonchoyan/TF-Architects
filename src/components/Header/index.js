@@ -65,7 +65,7 @@ const Header = () => {
 
 
     <div className={menuClass}>
-        <Link className={menuLinkClass} onClick={handleMenuClick} to="/"><div>HOME</div></Link>
+        <Link className={menuLinkClass} onClick={handleMenuClick} to="/"><div>{LANG_CONSTANTS.HOME[lang]}</div></Link>
         <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.PORTFOLIO}><div>{LANG_CONSTANTS.PORTFOLIO[lang]}</div></Link>
         <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.SERVICES}><div>{LANG_CONSTANTS.SERVICES[lang]}</div></Link>
         <Link className={menuLinkClass} onClick={handleMenuClick} to={ROUTE_CONSTANTS.ABOUT_US}><div>{LANG_CONSTANTS.ABOUT_US[lang]}</div></Link>
