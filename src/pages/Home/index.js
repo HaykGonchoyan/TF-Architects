@@ -33,7 +33,7 @@ const Home = () => {
 
     useEffect(() => {
         setInterval(() => {
-            setCount(count => count+0.5)
+            setCount(count => count+1)
         }, 3000)
     }, [])
     
