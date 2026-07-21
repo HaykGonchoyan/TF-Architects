@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     max-height: 840px;
     transition: 1s;
+    cursor: zoom-in;
 }
 
 .container {
