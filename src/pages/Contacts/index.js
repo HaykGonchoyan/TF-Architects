@@ -19,17 +19,15 @@ const Contacts = () => {
             <div className="cont-info">
                 {!Number(localStorage.lang) ?
                 (<div>
-                <div>Location - Yerevan, Hanrapetutyan 79 apartment 4</div>
-                <div>Email - info@tfplusa.com</div>
-                <div>Telephone - +374 43 711707</div>
-                <div>Report Bugs - hayk.gonchoyan@gmail.com</div>
+                <div className="contacts-text">Location - Yerevan, Hanrapetutyan 79 apartment 4</div>
+                <div className="contacts-text">Email - info@tfplusa.com</div>
+                <div className="contacts-text">Telephone - +374 43 711707</div>
                 </div>)
                 :
                 (<div>
-                <div>Վայր - Երևան, Հանրապետության 79 բնակարան 4</div>
-                <div>էլ. հասցե - info@tfplusa.com</div>
-                <div>Հեռախոսահամար - +374 43 711707</div>
-                <div>Բողոքել բագերից - hayk.gonchoyan@gmail.com</div>
+                <div className="contacts-text">Վայր - Երևան, Հանրապետության 79 բնակարան 4</div>
+                <div className="contacts-text">էլ. հասցե - info@tfplusa.com</div>
+                <div className="contacts-text">Հեռախոսահամար - +374 43 711707</div>
                 </div>)
                 }
             </div>
