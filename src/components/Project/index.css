@@ -32,13 +32,13 @@
 
 
 .text {
-    
+    font-weight: 700;
     text-decoration: none;
     color: white;
     margin: 0 10px;
     position: relative;
-    top: 84.4%;
-    font-size: 30px;
+    top: 87%;
+    font-size: 21px;
     
 }
 

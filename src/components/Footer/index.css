@@ -18,8 +18,8 @@
     background-image: url("../Header/images/TFAicon.png");
     background-repeat: no-repeat;
     background-size: contain;
-    min-width: 30px;
-    min-height: 30px;
+    min-width: 10px;
+    min-height: 10px;
     margin: auto;
 
 }
@@ -28,14 +28,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.4vw;  
+    font-size: 1vw;  
     margin: auto;
 }
 .fa {
     cursor: pointer;
     padding: 10px;
     font-size: 15px;
-    width: 15px;
+    width: 8px;
+    height: 8px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
