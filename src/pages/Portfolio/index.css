@@ -20,7 +20,7 @@
     padding: 40px 10px;
     display: flex;
     align-items: center;
-    cursor: context-menu;
+    cursor: default;
     justify-content: space-evenly;
 }
 
