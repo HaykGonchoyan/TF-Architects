@@ -4,7 +4,7 @@ import Contacts from './pages/Contacts';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import { ROUTE_CONSTANTS } from './components/core/utils/constants';
-import { Route, BrowserRouter, Switch} from 'react-router-dom';
+import { Route, BrowserRouter, Switch, Navigate} from 'react-router-dom';
 import UWC from './pages/Portfolio/UWC';
 import TIC from './pages/Portfolio/TIC';
 import Marash from './pages/Portfolio/Marash';
