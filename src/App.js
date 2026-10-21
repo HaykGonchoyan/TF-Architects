@@ -62,53 +62,7 @@ function App() {
                     <Page />
                   </Route>
                 ))}
-                
-                 
-
-                {/* <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/UWC"}>
-                  <UWC />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/TIC"}>
-                  <TIC />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/IDeAoffice"}>
-                  <IDeAoffice />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/FAST"}>
-                  <FAST />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Dilitown"}>
-                  <DiliTown />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Marash"}>
-                  <Marash />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/YEC"}>
-                  <YEC />
-                </Route> 
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/HotelComplex"}>
-                  <HotelComplex />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Ruby"}>
-                  <Ruby />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Steko"}>
-                  <Steko />
-                </Route>
-
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Dilitropic"}>
-                  <Dilitropic />
-                </Route> */}
-
+              
 
 
                 <Route path={ROUTE_CONSTANTS.CONTACTS}>
