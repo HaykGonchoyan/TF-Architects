@@ -23,6 +23,18 @@ import './App.css';
 function App() {
   const language = {lang: 0}
 
+  const pages = [ {name: "UWC", page: UWC}, 
+                  {name: "TIC", page: TIC}, 
+                  {name: "IDeAoffice", page: IDeAoffice}, 
+                  {name: "FAST", page: FAST}, 
+                  {name: "Dilitown", page: DiliTown}, 
+                  {name: "Marash", page: Marash}, 
+                  {name: "YEC", page: YEC}, 
+                  {name: "HotelComplex", page: HotelComplex}, 
+                  {name: "Ruby", page: Ruby}, 
+                  {name: "Steko", page: Steko}, 
+                  {name: "Dilitropic", page: Dilitropic}]
+
   if (!Number(localStorage.lang)) {
     localStorage.lang = '0'
   }else{
@@ -45,7 +57,15 @@ function App() {
                   <Portfolio />
                 </Route>
 
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/UWC"}>
+                {pages.map(({name, page: Page}) => (
+                  <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/" + name}>
+                    <Page />
+                  </Route>
+                ))}
+                
+                 
+
+                {/* <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/UWC"}>
                   <UWC />
                 </Route>
 
@@ -53,7 +73,7 @@ function App() {
                   <TIC />
                 </Route>
 
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/IDeA_office"}>
+                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/IDeAoffice"}>
                   <IDeAoffice />
                 </Route>
 
@@ -69,9 +89,9 @@ function App() {
                   <Marash />
                 </Route>
 
-                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Yeghvard_EC"}>
+                <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/YEC"}>
                   <YEC />
-                </Route>
+                </Route> 
 
                 <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/HotelComplex"}>
                   <HotelComplex />
@@ -87,7 +107,7 @@ function App() {
 
                 <Route path={ROUTE_CONSTANTS.PORTFOLIO + "/Dilitropic"}>
                   <Dilitropic />
-                </Route>
+                </Route> */}
 
 
 

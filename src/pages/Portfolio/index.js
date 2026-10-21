@@ -28,10 +28,10 @@ const Portfolio = () => {
             <div className="container">
                 <Project image={UWCmain} description="UWC-Dilijan" link={ROUTE_CONSTANTS.PORTFOLIO + "/UWC"}/>
                 <Project image={TICmain} description="TIC-Dilijan" link={ROUTE_CONSTANTS.PORTFOLIO + "/TIC"}/>
-                <Project image={IDeAmain} description="IDeA Office-Yerevan" link={ROUTE_CONSTANTS.PORTFOLIO + "/IDeA_office"}/>
+                <Project image={IDeAmain} description="IDeA Office-Yerevan" link={ROUTE_CONSTANTS.PORTFOLIO + "/IDeAoffice"}/>
                 <Project image={FASTmain} description="FAST-Yerevan" link={ROUTE_CONSTANTS.PORTFOLIO + "/FAST"}/>
                 <Project image={DiliTownMain} description="DiliTown-Dilijan" link={ROUTE_CONSTANTS.PORTFOLIO + "/Dilitown"}/>
-                <Project image={YECmain} description="Yeghvard EC-Yeghvard" link={ROUTE_CONSTANTS.PORTFOLIO + "/Yeghvard_EC"}/>
+                <Project image={YECmain} description="Yeghvard EC-Yeghvard" link={ROUTE_CONSTANTS.PORTFOLIO + "/YEC"}/>
                 <Project image={RubyMain} description="Ruby-Dubai" link={ROUTE_CONSTANTS.PORTFOLIO + "/Ruby"}/>
             </div>
             <hr />
