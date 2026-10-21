@@ -36,6 +36,10 @@ function App() {
                 <Route exact path="/">
                   <Home />
                 </Route>
+                
+                <Route exact path="/en">
+                  <Navigate to="/" replace />
+                </Route>
 
                 <Layout language = {language}>
                 
