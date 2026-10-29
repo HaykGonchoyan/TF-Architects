@@ -11,7 +11,7 @@ export const LANG_CONSTANTS = {
     SERVICES: ["SERVICES", "ՍԵՐՎԻՍ"],
     ABOUT_US: ["ABOUT US", "ՄԵՐ ՄԱՍԻՆ"],
     CONTACTS: ["CONTACTS", "ԴԻՄԵԼ"],
-    LANG: ["ENG", "ՀԱՅ"],
-    LANGUAGE: ["ENGLISH", "ՀԱՅԵՐԵՆ"],
+    LANG: ["ՀԱՅ", "ENG"],
+    LANGUAGE: ["ՀԱՅԵՐԵՆ", "ENGLISH"],
     MENU: ["MENU", "ՑԱՆԿ"]
 }
