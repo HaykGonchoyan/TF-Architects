@@ -85,13 +85,11 @@ const Home = () => {
     
     return(
         <div className="home-container" >
-//            {imagesLoaded &&
             <Link to = {ROUTE_CONSTANTS.PORTFOLIO + routes[count%routes.length]}>
                 <div className="home-slideshow" > 
                     <ImageLoader imageUrl={images[count%images.length] }  imageName={names[count%images.length]}/> 
                 </div>
             </Link>
-//            }
             <div className="left-container">
                 <h1 className="home-h1">TF+Architects</h1>
                 <Link className="home-single-link" to={ROUTE_CONSTANTS.PORTFOLIO}><div>{LANG_CONSTANTS.PORTFOLIO[lang]}</div></Link>
