@@ -19,7 +19,7 @@ const names = ["UWC", "YEGHVARD EC", "TIC", "IDEA OFFICE", "FAST", "DILITOWN", "
 const Home = () => {
     const [count, setCount] = useState(0) 
     const [lang, setLang] = useState(Number(localStorage.lang))  
-    const [imagesLoaded, setImagesLoaded] = useState(false)
+//    const [imagesLoaded, setImagesLoaded] = useState(false)
 
 
     const handleLangClick = () => {
@@ -34,33 +34,43 @@ const Home = () => {
       }
 
 
-    useEffect(() => {
-        let cancelled = false;
 
-        const preloadImages = async () => {
-            await Promise.all(
-                images.map(src => {
-                    return new Promise(resolve => {
-                        const img = new Image();
+        useEffect(() => {
+           images.forEach(src => {
+              const img = new Image();
+              img.src = src;
 
-                        img.onload = resolve;
-                        img.onerror = resolve;
-                       img.src = src;
-                    });
-                })
-            );
+              img.decode().catch(() => {});
+           });
+        }, []);
 
-            if (!cancelled) {
-                setImagesLoaded(true);
-            }
-        };
+    // useEffect(() => {
+    //     let cancelled = false;
 
-        preloadImages();
+    //     const preloadImages = async () => {
+    //         await Promise.all(
+    //             images.map(src => {
+    //                 return new Promise(resolve => {
+    //                     const img = new Image();
 
-        return () => {
-            cancelled = true;
-        };
-    }, []);
+    //                     img.onload = resolve;
+    //                     img.onerror = resolve;
+    //                    img.src = src;
+    //                 });
+    //             })
+    //         );
+
+    //         if (!cancelled) {
+    //             setImagesLoaded(true);
+    //         }
+    //     };
+
+    //     preloadImages();
+
+    //     return () => {
+    //         cancelled = true;
+    //     };
+    // }, []);
 
 
 
@@ -75,13 +85,13 @@ const Home = () => {
     
     return(
         <div className="home-container" >
-            {imagesLoaded &&
+//            {imagesLoaded &&
             <Link to = {ROUTE_CONSTANTS.PORTFOLIO + routes[count%routes.length]}>
                 <div className="home-slideshow" > 
                     <ImageLoader imageUrl={images[count%images.length] }  imageName={names[count%images.length]}/> 
                 </div>
             </Link>
-            }
+//            }
             <div className="left-container">
                 <h1 className="home-h1">TF+Architects</h1>
                 <Link className="home-single-link" to={ROUTE_CONSTANTS.PORTFOLIO}><div>{LANG_CONSTANTS.PORTFOLIO[lang]}</div></Link>
