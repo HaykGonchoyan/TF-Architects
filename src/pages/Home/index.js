@@ -13,7 +13,7 @@ const importAll = (r) => {
   
 const images = importAll(require.context('./SlideShow/', false, /.(png)$/))
 
-const routes = ["/UWC", "/YEC", "/TIC", "/IDeA_office", "/FAST", "/Dilitown", "/Dilitropic", "/Marash"]
+const routes = ["/UWC", "/YEC", "/TIC", "/IDeAoffice", "/FAST", "/Dilitown", "/Dilitropic", "/Marash"]
 const names = ["UWC", "YEGHVARD EC", "TIC", "IDEA OFFICE", "FAST", "DILITOWN", "DILITROPIC", "MARASH"]
 
 const Home = () => {
